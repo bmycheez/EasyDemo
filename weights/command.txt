@@ -1,0 +1,9 @@
+# raw2raw-2dnr alpha=0.4 float16 example
+trtexec --onnx=weights/raw2raw-torch-2dnr/Unet4to4-8ch_alpha-0.4.onnx --saveEngine=weights/raw2raw-trt-2dnr/Unet4to4-8ch_alpha-0.4.blob --fp16
+
+# rgb2rgb-2dnr alpha=0.8 float16 example
+trtexec --onnx=weights/rgb2rgb-torch-2dnr/Unet3to3-4ch_alpha-0.8.onnx --saveEngine=weights/rgb2rgb-trt-2dnr/Unet3to3-4ch_alpha-0.8.blob --fp16
+
+# rgb2rgb-3dnr alpha=1.2 float16 example
+trtexec --onnx=weights/rgb2rgb-torch-3dnr/Unet21to3-8ch_alpha-1.2.onnx --saveEngine=weights/rgb2rgb-trt-3dnr/Unet21to3-8ch_alpha-1.2.blob --fp16
+
